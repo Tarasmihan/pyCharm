@@ -1,7 +1,7 @@
-# This is a sample Python script.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+
+# WHILE CYCLE
+
 
 def whileCycle():
     i = 0
@@ -68,9 +68,12 @@ def slicePie(): # divide prize belong 2 teams
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    # WHILE CYCLE
     # whileCycle()
     # whileCycle2()
     # sumOnIntterval(a = int(input('Input a: ')), b = int(input('Input b: ')))
     # sumTillZero()
     # sumTillZero2()
     # slicePie()
+    # BREAK CONTINUE
+
