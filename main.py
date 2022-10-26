@@ -65,6 +65,40 @@ def slicePie(): # divide prize belong 2 teams
     print("slicePie_result: ", d)
 
 
+def breakContinue():
+    i = 0
+    while i < 5:
+        a, b = input().split()
+        a = int(a)
+        b = int(b)
+        if (a==0) and (b==0):
+            break
+        if (a==0) or (b==0):
+            continue
+        print(a*b)
+        i += 1
+
+
+def breakContinue2():
+    i = 0
+    s = 0
+    while i < 10:
+        i = i + 1
+        s = s + i
+        if s > 15:
+            break
+        i = i + 1
+
+
+def breakContinue3():
+    n = int(input())
+    while n <= 100:
+        if n < 10:
+            n = int(input())
+            continue
+        print(n)
+        n = int(input())
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -74,3 +108,6 @@ if __name__ == '__main__':
     # sumTillZero()
     # sumTillZero2()
     # slicePie()
+    # breakContinue()
+    # breakContinue2()
+    # breakContinue3()
