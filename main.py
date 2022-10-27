@@ -100,6 +100,83 @@ def breakContinue3():
         n = int(input())
 
 
+def forRange():
+    print('For i in range(10)')
+    for i in range(3, 10, 2):
+        print(i)
+
+def printStars():
+    n = int(input())
+    for i in range(n):
+        print(n*'*')
+
+def multiplyTable():
+     a = int(input())
+     b = int(input())
+     c = int(input())
+     d = int(input())
+     print ('\t', end = '')
+     for m in range(c, d+1):
+         print(m, end = '\t')
+     for i in range(a, b+1):
+        print('\n')
+        print(i, end ='\t')
+        for j in range(c, d+1):
+            print(i*j, end = '\t')
+
+def multiplyTable2():
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = int(input())
+    for g in range(c, d + 1):
+        print('\t' + str(g), end='')
+    print(end='\n')
+    for i in range(a, b + 1):
+        print(str(i) + '\t', end='')
+        for j in range(c, d + 1):
+            print(str(i * j), end='\t')
+        print(end='\n')
+
+def sumOfOddBetween():
+    a, b = (int(i) for i in input().split())
+    s = 0
+    if a % 2 == 0:
+        a += 1
+    for i in range (a, b+1, 2):
+        s += i
+    print(s)
+
+
+
+def avg3():
+    a = int(input())
+    b = int(input())
+    s = 0
+    k = 0
+    for i in range(a, b+1):
+        if i % 3 == 0:
+            k += 1
+            s += i
+    print(s)
+
+
+def avg3_2():
+    a = int(input())
+    b = int(input())
+    s = 0
+    while a % 3 != 0:
+        a += 1
+    for i in range (a, b+1, 3):
+        s += i
+    print(s)
+    
+
+
+
+
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # whileCycle()
@@ -111,3 +188,10 @@ if __name__ == '__main__':
     # breakContinue()
     # breakContinue2()
     # breakContinue3()
+    # forRange()
+    # printStars()
+    # multiplyTable()
+    # multiplyTable2()
+    # sumOfOddBetween()
+    # avg3()
+    avg3_2()
