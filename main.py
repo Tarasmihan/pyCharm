@@ -190,6 +190,14 @@ def slicing():
     s[1:-1]  #wert
     s[1:-1:2]#wr от первого до предпоследнего с шагом 2
     s[::-1]  #ytrewq
+    k = 'abcdefghijk'
+    print(k[3:6], end = ' ')
+    print(k[:6], end = ' ')
+    print(k[3:], end = ' ')
+    print(k[::-1], end = ' ')
+    print(k[-3:], end = ' ')
+    print(k[:-6], end = ' ')
+    print(k[-1:-10:-2]) 
 
 def polindrom():
     polindrom_string = input('Первая строка: \t')
@@ -197,6 +205,19 @@ def polindrom():
     y = polindrom_string[:math.ceil(len(polindrom_string)/2)-1:-1]
     print(x, y)
     print("y" if x == y else "n" )
+
+def shortGenom():
+    dna = input()  # считываем строку
+    print(dna[0], end='')  # выводим первый символ
+    cnt = 1  # счетчик символов на единице
+    for i in range(0, len(dna) - 1):  # итератор проходит по всем индексам символов кроме предпоследнего
+        if dna[i] == dna[i + 1]:  # сравниваем символ по текущему индексу со следующим
+            cnt += 1  # если символы одинаковые, то увеличиваем счетчик
+        else:
+            print(cnt, end='')  # если разные, то выводим значение счетчика
+            print(dna[i + 1], end='')  # выводим следующий символ
+            cnt = 1  # счетчик текущего символа на единице
+    print(cnt)  # в конце распечатываем значение счетчика последнего символа
 
 
 # Press the green button in the gutter to run the script.
@@ -218,4 +239,6 @@ if __name__ == '__main__':
     # avg3()
     # avg3_2()
     # stringMethods()
-    polindrom()
+    # slicing()
+    # polindrom()
+    shortGenom()
