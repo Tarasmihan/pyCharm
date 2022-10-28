@@ -3,6 +3,8 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
+import math
+
 def whileCycle():
     i = 0
     print("whileCycle_result: ", end = ' ')
@@ -172,9 +174,29 @@ def avg3_2():
     print(s)
     
 
+def stringMethods():
+    s = input().lower()
+    t = s.count('c') + s.count('g')
+    print(t/len(s) * 100)
 
 
+def slicing():
+    s = 'qwerty'
+    s[1]     #w
+    s[1:4]   #wer
+    s[:4]    #qwer
+    s[4:]    #ty
+    s[-4:]   #erty
+    s[1:-1]  #wert
+    s[1:-1:2]#wr от первого до предпоследнего с шагом 2
+    s[::-1]  #ytrewq
 
+def polindrom():
+    polindrom_string = input('Первая строка: \t')
+    x = polindrom_string[:math.ceil((len(polindrom_string)-1)/2)]
+    y = polindrom_string[:math.ceil(len(polindrom_string)/2)-1:-1]
+    print(x, y)
+    print("y" if x == y else "n" )
 
 
 # Press the green button in the gutter to run the script.
@@ -194,4 +216,6 @@ if __name__ == '__main__':
     # multiplyTable2()
     # sumOfOddBetween()
     # avg3()
-    avg3_2()
+    # avg3_2()
+    # stringMethods()
+    polindrom()
